@@ -13,7 +13,7 @@
 
     .product-image {
         width: 45%; /* Full width image */
-        max-width: 400px; /* Limit max width */
+        max-width: 300px; /* Limit max width */
     }
 
     .product-details {
