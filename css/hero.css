@@ -1,0 +1,22 @@
+.Hero{
+    background-color:#000 ;
+    color: #fff;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 5em;
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-size: xxx-large;
+    padding-bottom: 0.5em;
+    padding-top: 2em;
+}
+
+
+.frequentlySoldSection{
+    justify-content: center; 
+    display: flex;
+    font-size: x-large;
+}

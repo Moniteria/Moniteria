@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+    .frequentlySoldSection{
+        display: grid;
+    }
+    .item{
+        margin: none!important;
+    }
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .product-image {
+        width: 70%; /* Full width image */
+        max-width: 400px; /* Limit max width */
+    }
+
+    .product-details {
+        padding-left: 0; /* Remove left padding */
+        text-align: center; /* Center-align text */
+    }
+
+    .color-options {
+        justify-content: center; /* Center color options */
+    }
+}
+
+/* For mobile devices (small screens) */
+@media (max-width: 480px) {
+    .product-title {
+        font-size: 1.5rem; /* Smaller title font size */
+    }
+
+    .product-price {
+        font-size: 1.25rem; /* Smaller price font size */
+    }
+
+    .add-to-cart {
+        width: 100%; /* Full width button */
+        padding: 1rem; /* Larger padding for better tap area */
+    }
+}
