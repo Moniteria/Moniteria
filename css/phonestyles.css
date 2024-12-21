@@ -1,43 +1,64 @@
 @media (max-width: 768px) {
-    .frequentlySoldSection{
-        display: grid;
+    .frequentlySoldSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Full width */
+         /* Add some spacing */
     }
-    .item{
-        margin: none!important;
-    }
+
     .container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align items */
-        padding: 1rem; /* Reduce padding */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        text-align: center; /* Center-align text */
+        width: 100%; /* Ensure full width */
+        max-width: 600px; /* Limit maximum width */
+         /* Add  for spacing */
     }
 
     .product-image {
-        width: 45%; /* Full width image */
-        max-width: 300px; /* Limit max width */
+        width: 80%; /* Image fills 80% of container width */
+        max-width: 400px; /* Limit maximum width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure it's treated as a block element */
     }
 
     .product-details {
-        padding-left: 0; /* Remove left padding */
         text-align: center; /* Center-align text */
     }
 
     .color-options {
-        justify-content: center; /* Center color options */
-    }
-}
-
-/* For mobile devices (small screens) */
-@media (max-width: 480px) {
-    .product-title {
-        font-size: 1.5rem; /* Smaller title font size */
-    }
-
-    .product-price {
-        font-size: 1.25rem; /* Smaller price font size */
+        display: flex;
+        justify-content: center; /* Center options */
+        gap: 1rem; /* Add spacing between color options */
     }
 
     .add-to-cart {
         width: 100%; /* Full width button */
-        padding: 1rem; /* Larger padding for better tap area */
+        max-width: 300px; /* Limit button width */
+         /* Add  for better usability */
     }
+#body{
+    text-align: center;
+}
+}
+
+@media (max-width: 480px) {
+    .product-title {
+        font-size: 1.5rem; /* Smaller font for titles */
+    }
+
+    .product-price {
+        font-size: 1.25rem; /* Smaller font for price */
+    }
+
+    .product-image {
+        width: 90%; /* Larger image for smaller screens */
+        max-width: 450px; /* Adjust max width */
+    }
+
+
 }
