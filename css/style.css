@@ -44,3 +44,6 @@ animation: Button-hover 0.5s forwards 0s normal;
 .buyButtonWhiteBG:hover{
     animation: Button2-hover 0.5s forwards 0s normal;
 }
+body{
+  text-align: center;
+}

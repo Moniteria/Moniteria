@@ -7,7 +7,14 @@
         width: 100%; /* Full width */
          /* Add some spacing */
     }
-
+    .product-details{
+        margin: 0 auto;
+        text-align: center;
+      }
+      .product-image{
+        margin: 0 auto;
+        text-align: center;
+      }
     .container {
         display: flex;
         flex-direction: column;
@@ -23,7 +30,7 @@
         width: 80%; /* Image fills 80% of container width */
         max-width: 400px; /* Limit maximum width */
         height: auto; /* Maintain aspect ratio */
-        display: block; /* Ensure it's treated as a block element */
+         /* Ensure it's treated as a block element */
     }
 
     .product-details {

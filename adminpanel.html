@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Generate HTML</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/phonestyles.css">
+    <link rel="stylesheet" href="./css/ubuntuclasses.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="./css/font.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <style>
+        .admin-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .product-form input, .product-form select, .product-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .product-preview {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            width: 100%;
+            max-width: 800px;
+            background-color: #f9f9f9;
+        }
+        .product-preview h1 {
+            font-size: 24px;
+        }
+        .product-preview img {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px 0;
+        }
+        .product-preview .product-price {
+            font-size: 20px;
+            color: #333;
+        }
+        .product-preview .color-options, .product-preview select {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="ubuntu-regular">
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggler" data-toggle="open-navbar1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="./index.html">
+                    <img src="./img/Logos/Logo(Transparent).jpeg" width="80">
+                </a>
+            </div>
+            <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./adminpanel.html">Admin Panel</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="admin-panel">
+        <h1>Admin Panel - Generate Product HTML</h1>
+        
+        <!-- Product Management Form -->
+        <div class="product-form">
+            <h2>Enter Product Details</h2>
+            <form id="productForm">
+                <label for="productTitle">Product Title:</label>
+                <input type="text" id="productTitle" name="productTitle" required>
+                
+                <label for="productPrice">Price (EGP):</label>
+                <input type="number" id="productPrice" name="productPrice" required>
+                
+                <label for="productImages">Product Images:</label>
+                <input type="file" id="productImages" name="productImages" accept="image/*" multiple required>
+                 
+                <label for="productColor">Available Colors (comma-separated):</label>
+                <input type="text" id="productColor" name="productColor" placeholder="e.g. Black, White, Grey" required>
+                
+                <label for="productSize">Available Sizes (comma-separated):</label>
+                <input type="text" id="productSize" name="productSize" placeholder="e.g. S, M, L, XL" required>
+                
+                <button type="submit">Generate Product HTML</button>
+            </form>
+        </div>
+
+        <!-- Product Preview -->
+        <div class="product-preview" id="productPreview">
+            <h2>Product Preview</h2>
+            <div id="generatedHTML"></div>
+        </div>
+    </div>
+<script src="./js/adminpanel.js"></script>
+<script src="./js/navbar.js"></script>
+</body>
+</html>
